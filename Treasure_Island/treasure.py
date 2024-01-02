@@ -26,15 +26,15 @@ print('''
       
       ''')
 
-direction = input("where you want to go? Left or Right: ")
+direction = input("where you want to go? Left or Right: ").lower()
 
-if direction == 'Left':
-    option = input("Swim or wait for the boat: ")
+if direction == 'left':
+    option = input("Swim or wait for the boat: ").lower()
     if option == 'boat':
-        choose_door = input("Choose which door Red or Blue or Yellow: ")
-        if choose_door == 'Yellow':
+        choose_door = input("Choose which door Red or Blue or Yellow: ").lower()
+        if choose_door == 'yellow':
             print("Hurrah!! You are WIN !!.")
-        elif choose_door == 'Red':
+        elif choose_door == 'red':
             print("Burned by fire. Game over.")
         else:
             print("Eaten by beasts. Game over.")
